@@ -1,0 +1,105 @@
+body{
+  padding: 0 !important;
+  height: 100%;
+  width: 100%;
+  font-family: "Arimo", "Roboto-Mono", sans-serif;
+}
+
+nav.navbar{
+  width: 100%;
+  height: 80px;
+  float: left;
+  background-color: black;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+nav.navbar a {
+  box-sizing: border-box !important;
+  display: inline;
+  float: left;
+  text-decoration: none;
+  height: 100%;
+  padding: 30px 50px 0 50px;
+  text-align: center;
+  color: white;
+}
+
+.intro h1{
+  font-family: Galada, "Lobster";
+  font-size: 90px;
+}
+
+.intro{
+  text-align: center;
+  background-image: url('./portfolio-home-img.jpeg');
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  position:relative;
+  top: -30px;
+  padding-top: 250px;
+}
+/* nav.navbar::after{
+  content: '';
+  height:80px;
+} */
+
+nav.navbar div{
+
+}
+
+nav.navbar a:hover div{
+  border-bottom: 1px solid white;
+}
+
+nav.navbar a:active div{
+  border-bottom: 1px solid white;
+}
+
+.content{
+  width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.content div{
+  padding-top: 40px;
+}
+
+.content li{
+  list-style-type:disc;
+}
+
+.projects-section, .skills-section{
+  text-align: left;
+  margin: auto;
+}
+
+.projects-section{
+
+}
+
+.section-label{
+  text-align: center;
+}
+
+.row{
+  border-bottom: 1px solid #f2f2f2;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding-bottom: 20px;
+}
+
+.footer{
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 80px;
+  font-size: 30px;
+}

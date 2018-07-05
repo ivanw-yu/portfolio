@@ -1,10 +1,14 @@
 body{
   padding: 0 !important;
-  height: 100%;
-  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
   font-family: "Arimo", "Roboto-Mono", sans-serif;
 }
 
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
 p{
   font-size: 18px;
 }
@@ -35,6 +39,10 @@ nav.navbar a {
   color: white;
 }
 
+.navbar-wrapper{
+  width: 100% !important;
+}
+
 .intro h1{
   font-family: Galada, "Lobster";
   font-size: 90px;
@@ -42,8 +50,9 @@ nav.navbar a {
 
 .intro{
   text-align: center;
+  width: 100% !important;
+  height: 650px !important;
   background-image: url('./portfolio-home-img.jpeg');
-  height: 650px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,8 +82,8 @@ nav.navbar a:active div{
 
 .content{
   width: 100%;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 65px;
+  padding-left: 65px;
 }
 
 .content div{
@@ -112,4 +121,25 @@ nav.navbar a:active div{
   padding: 80px;
   font-size: 30px;
   margin-top: 30px;
+}
+
+@media only screen and (max-width: 394px){
+  /* This will make the body remain 100% width in smaller screens*/
+  body{
+    position: absolute;
+  }
+
+  .intro{
+    -moz-background-size: auto;
+    -webkit-background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: auto;
+  }
+
+  .content{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
 }
